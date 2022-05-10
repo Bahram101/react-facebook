@@ -1,9 +1,8 @@
+import Home from './pages/home/Home';
+// import {Person} from '@mui/icons-material';
+
 function App() {
-	return (
-		<div className='App'>
-			<h1>Hello</h1>
-		</div>
-	);
+	return <Home/>;
 }
 
 export default App;
