@@ -1,15 +1,15 @@
 import { Search, Person, Chat, Notifications } from '@mui/icons-material';
-import './topbar.css';
+import './topbar.scss';
 
 export default function Topbar() {
 	return (
 		<div className='topbarContainer'>
 			<div className='topbarLeft'>
-                <span className='logo'>Lamasocial</span>
+                <span className='logo'>facebook</span>
             </div>
 			<div className='topbarCenter'>
-                <div className="seatchbar">
-                    <Search/>
+                <div className="searchbar">
+                    <Search className='searchIcon'/>
                     <input placeholder='Serach for friend, post or video' className='searchInput'/>
                 </div>
             </div>
@@ -32,7 +32,7 @@ export default function Topbar() {
                         <span className="topbarIconBadge">3</span>
                     </div>
                 </div>
-                <img width="50" src="/assets/person/1.jpeg" alt="profile" />
+                <img className='profileImg' src="/assets/person/1.jpeg" alt="profile" />
             </div>
 		</div>
 	);
