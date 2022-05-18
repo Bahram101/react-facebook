@@ -1,3 +1,59 @@
-.rightbar{
-    flex:4;
+.rightbar {
+	flex: 4;
+	.rightBarWrapper {
+		padding: 20px 20px 0 0;
+		.birthdayContainer {
+			display: flex;
+			align-items: center;
+			.birthdayImg {
+				width: 40px;
+				height: 40px;
+				margin-right: 10px;
+			}
+			.birthdayText {
+				font-weight: 300;
+				font-size: 15px;
+			}
+		}
+        .rightbarAdv{
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .onlineFriendTitle{
+            margin-bottom: 20px;
+        }
+		.onlineFriendList {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			.onlineFriend {
+				display: flex;
+				align-items: center;
+				margin-bottom: 15px;
+				.onlineFriendImgContainer {
+					position: relative;
+                    margin-right: 10px;
+					.onlineFriendProfileImg {
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						object-fit: cover;
+					}
+					.onlineFrinedStatus {
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						background-color: limegreen;
+						position: absolute;
+                        top:-2px;
+                        right:0;
+                        border:2px solid white;
+					}
+				}
+                .onlineUsername{
+                    font-weight: 500;
+                }
+			}
+		}
+	}
 }
