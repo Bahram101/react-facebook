@@ -12,7 +12,7 @@ import {
 	SchoolRounded,
 } from '@mui/icons-material';
 
-export default function leftbar() {
+export default function Leftbar() {
 	return (
 		<div className='leftbar'>
 			<div className='leftbarWrapper'>

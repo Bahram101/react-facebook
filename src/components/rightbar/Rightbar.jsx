@@ -1,7 +1,7 @@
 import React from 'react';
 import './rightbar.scss';
 
-export default function rightbar() {
+export default function Rightbar() {
 	return (
 		<div className='rightbar'>
 			<div className='rightBarWrapper'>
