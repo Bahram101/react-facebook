@@ -11,6 +11,8 @@ import {
 	EventRounded,
 	SchoolRounded,
 } from '@mui/icons-material';
+import Friends from '../friends/Friends';
+import { Users } from '../../dummyData';
 
 export default function Leftbar() {
 	return (
@@ -57,86 +59,9 @@ export default function Leftbar() {
 				<button className='leftbarButton'>Show more</button>
 				<hr className='leftbarHr' />
 				<ul className='leftbarFriendList'>
-					<li className='leftbarFriend'>
-						<img
-							src='/assets/person/2.jpeg'
-							alt=''
-							className='leftbarFriendImg'
-						/>
-						<span className='leftbarFriendName'>John Doe</span>
-					</li>
-					<li className='leftbarFriend'>
-						<img
-							src='/assets/person/2.jpeg'
-							alt=''
-							className='leftbarFriendImg'
-						/>
-						<span className='leftbarFriendName'>John Doe</span>
-					</li>
-					<li className='leftbarFriend'>
-						<img
-							src='/assets/person/2.jpeg'
-							alt=''
-							className='leftbarFriendImg'
-						/>
-						<span className='leftbarFriendName'>John Doe</span>
-					</li>
-					<li className='leftbarFriend'>
-						<img
-							src='/assets/person/2.jpeg'
-							alt=''
-							className='leftbarFriendImg'
-						/>
-						<span className='leftbarFriendName'>John Doe</span>
-					</li>
-					<li className='leftbarFriend'>
-						<img
-							src='/assets/person/2.jpeg'
-							alt=''
-							className='leftbarFriendImg'
-						/>
-						<span className='leftbarFriendName'>John Doe</span>
-					</li>
-					<li className='leftbarFriend'>
-						<img
-							src='/assets/person/2.jpeg'
-							alt=''
-							className='leftbarFriendImg'
-						/>
-						<span className='leftbarFriendName'>John Doe</span>
-					</li>
-					<li className='leftbarFriend'>
-						<img
-							src='/assets/person/2.jpeg'
-							alt=''
-							className='leftbarFriendImg'
-						/>
-						<span className='leftbarFriendName'>John Doe</span>
-					</li>
-					<li className='leftbarFriend'>
-						<img
-							src='/assets/person/2.jpeg'
-							alt=''
-							className='leftbarFriendImg'
-						/>
-						<span className='leftbarFriendName'>John Doe</span>
-					</li>
-					<li className='leftbarFriend'>
-						<img
-							src='/assets/person/2.jpeg'
-							alt=''
-							className='leftbarFriendImg'
-						/>
-						<span className='leftbarFriendName'>John Doe</span>
-					</li>
-					<li className='leftbarFriend'>
-						<img
-							src='/assets/person/2.jpeg'
-							alt=''
-							className='leftbarFriendImg'
-						/>
-						<span className='leftbarFriendName'>John Doe</span>
-					</li>
+					{Users.map((u) => (
+						<Friends key={u.id} user={u} />
+					))}
 				</ul>
 			</div>
 		</div>

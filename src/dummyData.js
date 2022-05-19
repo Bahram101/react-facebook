@@ -74,7 +74,7 @@ export const Posts = [
 		desc: 'Every moment is a fresh beginning.',
 		photo: 'assets/post/3.jpeg',
 		date: '1 hour ago',
-		userId: 3,
+		userId: 1,
 		like: 61,
 		comment: 2,
 	},
