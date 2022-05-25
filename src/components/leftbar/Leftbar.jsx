@@ -15,6 +15,8 @@ import Friends from '../friends/Friends';
 import { Users } from '../../dummyData';
 
 export default function Leftbar() {
+	
+
 	return (
 		<div className='leftbar'>
 			<div className='leftbarWrapper'>
@@ -59,9 +61,7 @@ export default function Leftbar() {
 				<button className='leftbarButton'>Show more</button>
 				<hr className='leftbarHr' />
 				<ul className='leftbarFriendList'>
-					{Users.map((u) => (
-						<Friends key={u.id} user={u} />
-					))}
+					{  Users.map((u) => <Friends key={u.id} user={u} />)}
 				</ul>
 			</div>
 		</div>

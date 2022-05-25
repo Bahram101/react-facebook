@@ -3,7 +3,7 @@ import { Users } from '../../dummyData';
 import Online from '../online/Online';
 import './rightbar.scss';
 
-export default function Rightbar({ profile }) {
+export default function Rightbar({ user }) {
 	const HomeRightbar = () => {
 		return (
 			<>
@@ -35,41 +35,41 @@ export default function Rightbar({ profile }) {
 			<div className="rightbarInfo">
 				<div className="rightbarInfoItem">
 					<span className="rightbarInfoKey">City:</span>
-					<span className="rightbarInfoVal">Almaty</span>
+					<span className="rightbarInfoVal">{user.city}</span>
 				</div>
 				<div className="rightbarInfoItem">
 					<span className="rightbarInfoKey">From:</span>
-					<span className="rightbarInfoVal">Turkestan</span>
+					<span className="rightbarInfoVal">asdf</span>
 				</div>
 				<div className="rightbarInfoItem">
 					<span className="rightbarInfoKey">Relationship:</span>
-					<span className="rightbarInfoVal">Married</span>
+					<span className="rightbarInfoVal">asdf</span>
 				</div>
 			</div>
 			<h4>User followings</h4>
 			<div className="rightbarFollowings">
 				<div className="rightbarFollowing">
-					<img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg" />
+					<img src="/assets/person/1.jpeg" alt="" className="rightbarFollowingImg" />
 					<span className="rightbarFollowingName">John Carter</span>
 				</div>
 				<div className="rightbarFollowing">
-					<img src="assets/person/2.jpeg" alt="" className="rightbarFollowingImg" />
+					<img src="/assets/person/2.jpeg" alt="" className="rightbarFollowingImg" />
 					<span className="rightbarFollowingName">John Carter</span>
 				</div>
 				<div className="rightbarFollowing">
-					<img src="assets/person/3.jpeg" alt="" className="rightbarFollowingImg" />
+					<img src="/assets/person/3.jpeg" alt="" className="rightbarFollowingImg" />
 					<span className="rightbarFollowingName">John Carter</span>
 				</div>
 				<div className="rightbarFollowing">
-					<img src="assets/person/4.jpeg" alt="" className="rightbarFollowingImg" />
+					<img src="/assets/person/4.jpeg" alt="" className="rightbarFollowingImg" />
 					<span className="rightbarFollowingName">John Carter</span>
 				</div>
 				<div className="rightbarFollowing">
-					<img src="assets/person/5.jpeg" alt="" className="rightbarFollowingImg" />
+					<img src="/assets/person/5.jpeg" alt="" className="rightbarFollowingImg" />
 					<span className="rightbarFollowingName">John Carter</span>
 				</div>
 				<div className="rightbarFollowing">
-					<img src="assets/person/6.jpeg" alt="" className="rightbarFollowingImg" />
+					<img src="/assets/person/6.jpeg" alt="" className="rightbarFollowingImg" />
 					<span className="rightbarFollowingName">John Carter</span>
 				</div>
 			</div>
@@ -79,7 +79,7 @@ export default function Rightbar({ profile }) {
 	return (
 		<div className='rightbar'>
 			<div className='rightBarWrapper'>
-				{profile ? <ProfileRightbar /> : <HomeRightbar />  }
+				{user ? <ProfileRightbar /> : <HomeRightbar />  }
 			</div>
 		</div>
 	);
